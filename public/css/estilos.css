@@ -1,0 +1,254 @@
+* {
+	padding:0;
+	margin:0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: oswald, helvetica, arial, sans-serif;
+	background:url(../img/fondorusia.jpg);
+	background-size: cover;
+	background-attachment:fixed;
+}
+
+.contenedor {
+	width:90%;
+	max-width:1000px;
+	margin:auto;
+}
+
+#particles-js {
+	width:100%;
+	height:100%;
+	position:fixed;
+	background:rgba(0,0,0,.4);
+}
+
+header {
+	position: relative;
+	height:auto;
+}
+
+header .menu {
+	background:rgba(255,255,255,.7);
+	overflow: hidden;
+}
+
+header .logo {
+	color:rgba(0,0,0,.8);
+	float:left;
+	font-size:30px;
+	line-height:80px;
+}
+
+header nav {
+	float:right;
+}
+
+header nav ul {
+	list-style: none;
+}
+
+header nav ul li {
+	float: left;
+}
+
+header nav ul li a {
+	color:rgba(0,0,0,.8);
+	text-decoration: none;
+	display: block;
+	font-size:18px;
+	padding:0 20px;
+	line-height:80px;
+}
+
+header nav ul li:hover {
+	background:rgba(0,0,0,.8);
+}
+
+header nav ul li a:hover {
+	color:#fff;
+}
+
+.texto {
+	color:#fff;
+	position:relative;
+	padding:200px 0;
+	text-align: center;
+	font-weight: 400;
+}
+
+.texto h2, .texto p {
+
+	display:inline-block;
+	padding:10px 20px;
+}
+
+.texto h2 {
+	font-size:60px;
+	letter-spacing: 2.5px;
+	font-weight: normal;
+}
+
+.texto p {
+	font-size:20px;
+	letter-spacing: 2.5px;
+}
+  #section1 {
+  	padding-top:50px;
+  	height:1000px;
+  	color: #fff;
+  	background-color: #1E88E5;
+  }
+  #section2 {
+  	padding-top:50px;
+  	height:1000px;
+  	color: #fff; 
+  	background-color: #673ab7;
+  }
+  #section3 {
+  	padding-top:50px;
+  	height:1000px;
+  	color: #fff; 
+  	background-color: #ff9800;
+  }
+  #section4 {
+  	padding-top:40px;
+  	height:1000px;
+  	color: #fff; 
+  	background-color: #00bcd4;
+  }
+  #wrap {
+  width: 90%;
+  max-width: 500px;
+  padding: 25px;
+  margin: auto;
+  background: #fff;
+  box-shadow: 0px 0px 3px grey; }
+
+#contenedor-formulario {
+  width: 100%;
+  color: #f2f2f2;
+  padding: 50px; }
+  #contenedor-formulario #formulario {
+    width: 100%;
+    margin: auto; }
+    #contenedor-formulario #formulario .input-group {
+      position: relative;
+      margin-bottom: 32px; }
+      #contenedor-formulario #formulario .input-group input[type="text"],
+      #contenedor-formulario #formulario .input-group input[type="email"],
+      #contenedor-formulario #formulario .input-group input[type="password"] {
+        font-family: "Roboto";
+        font-size: 16px;
+        color: #303F9F;
+        width: 100%;
+        outline: none;
+        padding: 15px;
+        background: none;
+        border: none;
+        border-bottom: 2px solid #FF6347; }
+        #contenedor-formulario #formulario .input-group input[type="text"]:focus, 
+        #contenedor-formulario #formulario .input-group input[type="text"]:active,
+        #contenedor-formulario #formulario .input-group input[type="email"]:focus,
+        #contenedor-formulario #formulario .input-group input[type="email"]:active,
+        #contenedor-formulario #formulario .input-group input[type="password"]:focus,
+        #contenedor-formulario #formulario .input-group input[type="password"]:active {
+          outline: none;
+          border-bottom: 2px solid #cc0000; }
+        #contenedor-formulario #formulario .input-group input[type="text"].error,
+        #contenedor-formulario #formulario .input-group input[type="email"].error,
+        #contenedor-formulario #formulario .input-group input[type="password"].error {
+          border-bottom: 2px solid #D32F2F; }
+          #contenedor-formulario #formulario .input-group input[type="text"].error + label,
+          #contenedor-formulario #formulario .input-group input[type="email"].error + label,
+          #contenedor-formulario #formulario .input-group input[type="password"].error + label {
+            color: #D32F2F; }
+      #contenedor-formulario #formulario .input-group label {
+        color: #000; }
+        #contenedor-formulario #formulario .input-group label.label {
+          -webkit-transition: all 0.3s ease;
+          -o-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+          margin-left: 15px;
+          font-size: 16px;
+          line-height: 16px;
+          position: absolute;
+          top: 16px;
+          left: 0; }
+          #contenedor-formulario #formulario .input-group label.label.active {
+            top: -12px;
+            font-size: 12px;
+            line-height: 12px;
+            color: #000; }
+      #contenedor-formulario #formulario .input-group.checkbox label, 
+      #contenedor-formulario #formulario .input-group.radio label {
+        display: inline-block;
+        cursor: pointer;
+        color: #000;
+        position: relative;
+        padding: 5px 15px 5px 51px;
+        font-size: 1em;
+        border-radius: 3px;
+        -webkit-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease; }
+        #contenedor-formulario #formulario .input-group.checkbox label:hover,
+        #contenedor-formulario #formulario .input-group.radio label:hover {
+          background: #bbdefb; }
+        #contenedor-formulario #formulario .input-group.checkbox label:before, 
+        #contenedor-formulario #formulario .input-group.radio label:before {
+          content: "";
+          display: inline-block;
+          width: 17px;
+          height: 17px;
+          position: absolute;
+          left: 15px;
+          border-radius: 50%;
+          background: none;
+          border: 2px solid #FF6347; }
+      #contenedor-formulario #formulario .input-group.error label {
+        color: #D32F2F; }
+        #contenedor-formulario #formulario .input-group.error label:hover {
+          background: rgba(211, 47, 47, 0.2); }
+        #contenedor-formulario #formulario .input-group.error label:before {
+          border: 2px solid #FF6347; }
+      #contenedor-formulario #formulario .input-group.radio input[type="radio"] {
+        display: none; }
+        #contenedor-formulario #formulario .input-group.radio input[type="radio"]:checked + label:before {
+          display: none; }
+        #contenedor-formulario #formulario .input-group.radio input[type="radio"]:checked + label {
+          padding: 5px 15px;
+          background: #FF6347;
+          border-radius: 2px;
+          color: #f2f2f2; }
+      #contenedor-formulario #formulario .input-group.checkbox label:before {
+        border-radius: 3px; }
+      #contenedor-formulario #formulario .input-group.checkbox input[type="checkbox"] {
+        display: none; }
+        #contenedor-formulario #formulario .input-group.checkbox input[type="checkbox"]:checked + label:before {
+          display: none; }
+        #contenedor-formulario #formulario .input-group.checkbox input[type="checkbox"]:checked + label {
+          background: #FF6347;
+          color: #f2f2f2;
+          padding: 5px 15px; }
+    #contenedor-formulario #formulario input[type="submit"] {
+      background:#FF6347;
+      border-radius: 1px;
+      border: 2px solid #f2f2f2;
+      color: #fff;
+      cursor: pointer;
+      display: inline-block;
+      font-family: "Roboto";
+      font-size: 16px;
+      padding: 15px;
+      width: 100%;
+      -webkit-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+      #contenedor-formulario #formulario input[type="submit"]:hover {
+        background: red; }
+
+

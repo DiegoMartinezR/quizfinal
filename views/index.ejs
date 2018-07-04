@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<title>QuizRusia2018</title>
+	<link rel="shortcut icon" href="img/icono.png" />
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link href='http://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+	<div id="particles-js"></div>
+
+	<header>
+		<nav style="width: 100%;" class="navbar navbar-inverse navbar-static-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navegacion-fm">
+                        <span class="sr-only">Desplegar</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <img width="150" class="logo" src="img/logo.png">
+                </div>
+                <!--Menu-->
+                <div class="collapse navbar-collapse" id="navegacion-fm">
+                    <ul class="nav navbar-nav">
+                        
+                        <li class=""><a href="index.html">Inicio</a></li>
+                        <li><a href="#">¿Quienes somos</a></li>
+                        <li><a href="#">Contactanos</a></li>
+                    </ul>
+                    <form action="/login" method="post" class="navbar-form navbar-right">
+                        <div class="form-group">
+                            <input class="form-control" type="text" placeholder="Ingresar correo" name="email"  required="">
+                            <input class="form-control" type="password" placeholder="Ingresar contraseña" name="password" required="">
+                        </div>
+                            <input class="btn btn-primary" type="submit" value="Iniciar sesion" >
+                            <input class="btn btn-primary" type="button" value="Registrar" data-target="#ventanaregistro" data-toggle="modal" name="ingresar" >
+                    </form>
+                </div>
+            </div>
+        </nav>
+	</header>
+
+	<div class="texto">
+		<h2>Responde todos<br> los quiz que puedas</h2>
+		<br>
+		<input class="btn btn-success btn-lg" type="button" value="Ir a QuizMundial 2018" onclick="location.href='principal.html'">
+	</div>
+<!--Modal-->
+	<div class="modal fade" id="ventanaregistro">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button tyle="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+					<h3 class="modal-title"><center>Unete hoy a QuizMundial2018</center></h3>
+				</div>
+				<!--Contenido modal-->
+				<div class="modal-body">
+					<div class="contenedor-formulario" id="contenedor-formulario">
+						<div class="wrap" id="wrap">
+						<form action="/signup" class="formulario" id="formulario" name="formulario_registro" method="post">
+							<div>
+								<div class="input-group">
+									<input type="text" id="nombre" name="nombre">
+									<label for="nombre">Nombre:</label>
+								</div>
+								<div class="input-group">
+									<input type="text" id="apellido" name="apellido">
+									<label for="apellido">Apellidos </label>
+								</div>
+								<div class="input-group">
+									<input type="email" id="correo" name="email">
+									<label for="correo">Correo electrico:</label>
+								</div>
+								<div class="input-group">
+									<input type="password" id="contra1" name="password">
+									<label for="contra1">Contraseña:</label>
+								</div>
+								<!-- <div class="input-group">
+									<input type="password" id="contra2" name="contra2">
+									<label for="contra2">Confirmar contraseña:</label>
+								</div> -->
+								<!-- <div class="input-group radio">
+									<input type="radio" id="hombre" name="sexo">
+									<label for="hombre">Hombre:</label>
+
+									<input type="radio" id="mujer" name="sexo">
+									<label for="mujer">Mujer:</label>
+								</div> -->
+								<div class="input-group checkbox">
+									<input type="checkbox" id="terminos" name="terminos">
+									<label for="terminos">Acepto los terminos y condiciones</label>
+								</div>
+								<input type="submit" name="btn-submit" value="Registrarme"  >
+								
+								<a href="/auth/google" class="btn btn-danger"><span class="fa fa-google-plus"></span> Google</a>
+							</div>
+						</form>
+						</div>
+					</div>
+				</div>
+				<!--Footer-->
+				<div class="modal-footer">
+					<p><center>Al ingresar a QuizMundial2018, aceptas nuestros <b>Terminos de servicio</b> y <b>politicas de privacidad</b></center></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="container">
+		<div class="row">
+			<div class="col-xs-6 col-md-3">
+				<div class="thumbnail">
+				<img src="img/img1.jpg">
+				<div class="caption">
+					<h3>Ir a Quiz gratuito</h3>
+					<a class="btn btn-info btn-lg" type="submit" href="#section1" name="">Ver..</a>
+				</div>
+				</div>
+			</div>
+			<div class="col-xs-6 col-md-3">
+				<div class="thumbnail">
+				<img src="img/img2.jpg">
+				<div class="caption">
+					<h3>Ver selecciones</h3>
+					<a class="btn btn-info btn-lg" type="submit" href="#section2" name="">Ver..</a>
+				</div>
+				</div>
+			</div>
+			<div class="col-xs-6 col-md-3">
+				<div class="thumbnail"> 
+				<img src="img/img3.jpg">
+				<div class="caption">
+					<h3>Ver estadios</h3>
+					<a class="btn btn-info btn-lg" type="submit" href="#section3" name="">Ver..</a>
+				</div>
+				</div>
+			</div>
+			<div class="col-xs-6 col-md-3">
+				<div class="thumbnail">
+				<img src="img/img4.png">
+				<div class="caption">
+					<h3>Ver zonas turisticas</h3>
+					<a class="btn btn-info btn-lg" type="submit" href="#section4" name="">Ver..</a>
+				</div>
+				</div>
+			</div>
+		</div>
+	</div>
+ 	<br><br><br><br><br><br><br><br>
+
+	<!-- <div id="section1" class="container-fluid">
+  		<h1>Section 1</h1>
+  		<p>Click on the different Section links in the navbar to see the smooth scrolling effect.</p>
+	</div>
+	<div id="section2" class="container-fluid">
+  		<h1>Section 2</h1>
+  		<p>Click on the different Section links in the navbar to see the smooth scrolling effect.</p>
+		</div>
+	<div id="section3" class="container-fluid">
+  		<h1>Section 3</h1>
+  		<p>Click on the different Section links in the navbar to see the smooth scrolling effect.</p>
+	</div>
+	<div id="section4" class="container-fluid">
+  		<h1>Section 4 Submenu 1</h1>
+  		<p>Click on the different Section links in the navbar to see the smooth scrolling effect.</p>
+	</div> -->
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.0-rc.2/angular.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+	<script src="http://code.jquery.com/jquery-latest.js"></script>
+	<script src="js/particles.js"></script>
+	<script src="js/particulas.js"></script>
+	
+	</body>
+</html>
