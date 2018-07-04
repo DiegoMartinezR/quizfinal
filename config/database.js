@@ -1,3 +1,3 @@
 module.exports = {
-	'url'	: 'mongodb://localhost:27017/quiz'
+	'url'	: 'mongodb://admin:123qwe@ds127851.mlab.com:27851/quizmundial'
 }
